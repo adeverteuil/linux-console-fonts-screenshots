@@ -1,0 +1,20 @@
+---
+- name: Set up the Archlinux host
+  hosts: all
+  tasks:
+
+    - name: install packages
+      pacman:
+        - fbdump  # fbdump
+        - netpbm  # pnmcrop
+        - libpng  # pnm2png
+
+    - name: copy the script
+      copy:
+        src: gen-fonts-images.py
+        dest: /root/gen-fonts-images.py
+        mode: 0755
+
+    - name: generate fonts images
+      command: openvt /root/gen-fonts-images.py
+      creates: /root/images
