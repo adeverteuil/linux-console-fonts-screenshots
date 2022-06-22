@@ -55,6 +55,9 @@ Site:
 * [ ] Update link on Archlinux wiki.
 * [ ] Set up Matomo site.
       * [ ] Make sure it is only added on my build, not in GitHub.
+* [ ] Update tarball, host it in static.
+* [ ] Redirect old URL from my blog to the new site.
+* [ ] Move Readme files from my static site to this site.
 
 Repository:
 
@@ -64,7 +67,7 @@ Repository:
 
 Script:
 
-* [ ] Fix error in the script.
+* [X] Fix error in the script.
 * [ ] Modernize the script.
       * [ ] Use `argparse`.
 * [ ] Generate tarball, host it in `static`.
