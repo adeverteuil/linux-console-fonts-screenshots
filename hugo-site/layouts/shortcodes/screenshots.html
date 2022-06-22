@@ -1,0 +1,6 @@
+{{ range $.Site.Data.fonts }}
+### {{ . }}
+
+<img class="lazyload" data-src="/screenshots/{{ . }}" alt="Screenshot of {{ . }}" />
+
+{{ end }}
