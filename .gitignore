@@ -1,3 +1,4 @@
-hugo_cache
-node_modules
-resources
+/hugo-site/hugo_cache
+/hugo-site/node_modules
+/hugo-site/resources
+/ansible/hosts
