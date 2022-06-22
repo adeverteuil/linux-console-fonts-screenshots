@@ -20,11 +20,11 @@
 1. Go to the project root.
 1. SCP the files.
    ```
-   rsync --delete your-linode:screenshots hugo-site/static
+   rsync --recursive --delete root@your-linode:screenshots hugo-site/static
    ```
-1. Generate the YAML list of file names.
+1. Download the YAML data.
    ```
-   find hugo-site/static/screenshots -type f -printf '- %f\n' | sort > hugo-site/data/fonts.yaml
+   scp root@your-linode:fonts.yaml hugo-site/data/fonts.yaml
    ```
 
 

@@ -1,6 +1,10 @@
 {{ range $.Site.Data.fonts }}
-### {{ . }}
+### {{ .name }}
 
-<img class="lazyload" data-src="/screenshots/{{ . }}" alt="Screenshot of {{ . }}" />
+<img src="/images/placeholder.png"
+     data-src="/screenshots/{{ .image }}"
+     class="lazyload"
+     alt="Screenshot of {{ .name }}"
+     style="width: {{ .width }}px; height: {{ .height }}px;" />
 
 {{ end }}

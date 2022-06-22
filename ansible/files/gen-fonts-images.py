@@ -68,15 +68,21 @@ def main():
                 if height is not None:
                     setfont += ['-' + height]  # Prepend "-" to height argument.
                 setfont += [font]
+
                 returnvalue = subprocess.call(setfont)
                 if returnvalue > 0:
                     raise Exception('failed "{}"'.format(' '.join(args)))
                 subprocess.call(['clear'])
 
-                ## This is the part you would change if you want to
-                ## generate images with custom text.
-                print('{} {}'.format(font, height if height is not None else ''))
-                subprocess.call(['showconsolefont', '-v'])
+                if font == "972.cp" and height == "8":
+                    returnvalue = subprocess.call('setfont')
+                    subprocess.call(['clear'])
+                    print("Font 972.cp with height 8 is buggy.")
+                else:
+                    ## This is the part you would change if you want to
+                    ## generate images with custom text.
+                    print('{} {}'.format(font, height if height is not None else ''))
+                    subprocess.call(['showconsolefont', '-v'])
 
                 # if height is set, add it in parenthesis in the filename.
                 filename = ('screenshots/'
@@ -113,7 +119,7 @@ def get_fonts_list():
     parser = optparse.OptionParser(usage=usage)
     (options, args) = parser.parse_args()
     if not args:
-        return [x for x in os.listdir(FONTSDIR) if x.endswith('.gz')]
+        return sorted([x for x in os.listdir(FONTSDIR) if x.endswith('.gz')])
     else:
         return args
 

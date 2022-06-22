@@ -12,13 +12,21 @@
           - rsync
         state: present
 
-    - name: copy the script
+    - name: copy the scripts
       copy:
-        src: gen-fonts-images.py
-        dest: /root/gen-fonts-images.py
+        src: '{{ item }}'
+        dest: /root/{{ item }}
         mode: 0755
+      with_items:
+        - gen-fonts-images.py
+        - gen-fonts-data.py
 
     - name: generate fonts images
       command: openvt --wait --switch /root/gen-fonts-images.py
       args:
         creates: /root/screenshots
+
+    - name: generate fonts data
+      command: /root/gen-fonts-data.py
+      args:
+        creates: /root/fonts.yaml
