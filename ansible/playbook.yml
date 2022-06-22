@@ -19,6 +19,6 @@
         mode: 0755
 
     - name: generate fonts images
-      command: openvt /root/gen-fonts-images.py
+      command: openvt --wait --switch /root/gen-fonts-images.py
       args:
-        creates: /root/images
+        creates: /root/screenshots
