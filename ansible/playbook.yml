@@ -5,9 +5,12 @@
 
     - name: install packages
       pacman:
-        - fbdump  # fbdump
-        - netpbm  # pnmcrop
-        - libpng  # pnm2png
+        name:
+          - fbdump  # Provides fbdump
+          - netpbm  # Provides pnmcrop
+          - libpng  # Provides pnm2png
+          - rsync
+        state: present
 
     - name: copy the script
       copy:
@@ -17,4 +20,5 @@
 
     - name: generate fonts images
       command: openvt /root/gen-fonts-images.py
-      creates: /root/images
+      args:
+        creates: /root/images
