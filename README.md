@@ -9,6 +9,9 @@ https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisite
 * Ansible
 * Hugo Extended >=v0.73.0.
 * Go >=v1.12
+* Recent NodeJS
+  * Install from [nodesource](https://github.com/nodesource/distributions/blob/master/README.md),
+    the version that is in the Ubuntu 20.04 repository is too old (version 10 or something).
 * PostCSS (NPM module)
   ```
   cd hugo-site
