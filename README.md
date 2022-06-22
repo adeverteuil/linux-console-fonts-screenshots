@@ -76,6 +76,10 @@ Do steps 1 to 3 above and use the `dev-server.sh` command to serve the site loca
 
 ## To do
 
+Playbook:
+
+* [ ] Update tarball, host it in static.
+
 Site:
 
 * [X] Figure out hosting and domain name.
@@ -83,10 +87,10 @@ Site:
 * [x] Edit GitHub repo URL.
 * [X] Set up Matomo site.
       * [X] Add Matomo code in `head-end.html`.
-* [ ] Update tarball, host it in static.
 * [ ] Edit Introduction with description of my process.
+* [ ] Migrate Readme files from my static site to this site.
+* [ ] Add a link back to my blog.
 * [ ] Redirect old URL from my blog to the new site.
-* [ ] Move Readme files from my static site to this site.
 * [ ] Update link on Archlinux wiki.
 
 Repository:
@@ -99,5 +103,4 @@ Script:
 
 * [X] Fix error in the script.
 * [ ] Modernize the script.
-      * [ ] Use `argparse`.
-* [ ] Generate tarball, host it in `static`.
+      * Use `argparse`.
