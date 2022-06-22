@@ -46,12 +46,25 @@ hugo server --cacheDir "$PWD/hugo_cache"
 
 ## To do
 
-* [X] Create Ansible playbook.
-      * Install required packages: `fbdump`, `netpbm`, `libpng`.
-* [ ] Create a shortcode and use YAML data
-* [ ] Fix error in the script.
-* [ ] Modernize the script.
-      * [ ] Use `argparse`.
+Site:
+
+* [ ] Edit GitHub repo URL.
+* [ ] Figure out hosting and domain name.
+      * GitHub pages?
+* [ ] Edit Introduction with description of my process.
 * [ ] Update link on Archlinux wiki.
 * [ ] Set up Matomo site.
       * [ ] Make sure it is only added on my build, not in GitHub.
+
+Repository:
+
+* [X] Create Ansible playbook.
+      * Install required packages: `fbdump`, `netpbm`, `libpng`.
+* [X] Create a shortcode and use YAML data
+
+Script:
+
+* [ ] Fix error in the script.
+* [ ] Modernize the script.
+      * [ ] Use `argparse`.
+* [ ] Generate tarball, host it in `static`.
