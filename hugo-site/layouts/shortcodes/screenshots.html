@@ -1,7 +1,7 @@
 {{ range $.Site.Data.fonts }}
 ### {{ .name }}
 
-<img src="/images/placeholder.png"
+<img src="{{ .Site.BaseURL }}/images/placeholder.png"
      data-src="/screenshots/{{ .image }}"
      class="lazyload"
      alt="Screenshot of {{ .name }}"
