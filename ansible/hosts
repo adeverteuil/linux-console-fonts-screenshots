@@ -1,1 +1,1 @@
-172.105.21.124 ansible_host=arch ansible_user=root
+arch ansible_host=172.105.21.124 ansible_user=root
