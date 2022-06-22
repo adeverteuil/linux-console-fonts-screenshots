@@ -67,6 +67,6 @@ A copy of the license is available at
 [http://www.gnu.org/copyleft/fdl.html](http://www.gnu.org/copyleft/fdl.html).
 
 
-## Previews
+## Screenshots
 
 {{% screenshots %}}
