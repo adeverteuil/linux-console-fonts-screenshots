@@ -1,5 +1,23 @@
 # Linux Console Fonts site
 
+
+## Build prerequisites
+
+https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/
+
+* An Archlinux VM
+* Ansible
+* Hugo Extended >=v0.73.0.
+* Go >=v1.12
+* PostCSS (NPM module)
+  ```
+  cd hugo-site
+  npm install -D autoprefixer
+  npm install -D postcss-cli
+  npm install -D postcss
+  ```
+
+
 ## Generating the screenshots
 
 1. Create a Linode VM:
@@ -9,13 +27,13 @@
 1. CD into the `ansible` directory.
 1. Update the inventory file.  
    Copy `hosts.example` to `hosts` and edit it.
-1. Run the `setup.yml` playbook.
+1. Run the `playbook.yml` playbook.
    ```
-   ansible-playbook setup.yml
+   ansible-playbook playbook.yml
    ```
 
 
-## Generating the website
+## Generating/updating the screenshots
 
 1. Go to the project root.
 1. SCP the files.
@@ -30,11 +48,20 @@
 
 ## Developing the website (serving locally)
 
-Do steps 1 to 3 above and use this `hugo server` command to serve the site locally.
+Do steps 1 to 3 above and use the `dev-server.sh` command to serve the site locally.
 
 ```
-hugo server --cacheDir "$PWD/hugo_cache"
+./dev-server.sh
 ```
+
+
+## Generating/updating the site
+
+1. Generate the site.
+   ```
+   ./generate-site.sh
+   ```
+1. Create a PR or push to the `main` branch.
 
 
 ## Docsy customizations
