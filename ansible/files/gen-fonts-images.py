@@ -44,7 +44,7 @@ def main():
     logging.debug('fontslist = ' + '\n'.join(fontslist))
 
     try:
-        os.mkdir("images")
+        os.mkdir("screenshots")
     except FileExistsError:
         pass
 
@@ -79,7 +79,8 @@ def main():
                 subprocess.call(['showconsolefont', '-v'])
 
                 # if height is set, add it in parenthesis in the filename.
-                filename = (font
+                filename = ('screenshots/'
+                         + font
                          + ('(' + height + ')' if height is not None else '')
                          + '.png')
                 logging.debug('output : {}'.format(filename))
