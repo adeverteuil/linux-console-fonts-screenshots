@@ -78,16 +78,16 @@ Do steps 1 to 3 above and use the `dev-server.sh` command to serve the site loca
 
 Site:
 
-* [ ] Edit GitHub repo URL.
-* [ ] Figure out hosting and domain name.
+* [X] Figure out hosting and domain name.
       * GitHub pages?
-* [ ] Edit Introduction with description of my process.
-* [ ] Update link on Archlinux wiki.
-* [ ] Set up Matomo site.
-      * [ ] Make sure it is only added on my build, not in GitHub.
+* [x] Edit GitHub repo URL.
+* [X] Set up Matomo site.
+      * [X] Add Matomo code in `head-end.html`.
 * [ ] Update tarball, host it in static.
+* [ ] Edit Introduction with description of my process.
 * [ ] Redirect old URL from my blog to the new site.
 * [ ] Move Readme files from my static site to this site.
+* [ ] Update link on Archlinux wiki.
 
 Repository:
 
