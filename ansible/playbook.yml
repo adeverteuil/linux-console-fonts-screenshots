@@ -1,6 +1,6 @@
 ---
 - name: Set up the Archlinux host
-  hosts: all
+  hosts: arch
   tasks:
 
     - name: install packages

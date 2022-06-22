@@ -1,5 +1,8 @@
 # Linux Console Fonts site
 
+Source code for the site
+[Linux Console Fonts Screenshots](https://adeverteuil.github.io/linux-console-fonts-screenshots/).
+
 
 ## Build prerequisites
 
@@ -29,7 +32,7 @@ https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisite
    * 25 GB storage
 1. CD into the `ansible` directory.
 1. Update the inventory file.  
-   Copy `hosts.example` to `hosts` and edit it.
+   Copy `host.example` to `hosts` and edit it.
 1. Run the `playbook.yml` playbook.
    ```
    ansible-playbook playbook.yml
@@ -79,6 +82,7 @@ Do steps 1 to 3 above and use the `dev-server.sh` command to serve the site loca
 Playbook:
 
 * [ ] Update tarball, host it in static.
+* [ ] Download files automatically instead of the commands documented above.
 
 Site:
 
