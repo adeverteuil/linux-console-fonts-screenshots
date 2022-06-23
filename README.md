@@ -87,8 +87,8 @@ Site:
 * [X] Test and update GitHub repo link.
 * [X] Migrate Readme files from my static site to this site.
 * [X] Add a link back to my blog.
-* [ ] Redirect old URL from my blog to the new site.
-* [ ] Update link on Archlinux wiki.
+* [X] Redirect old URL from my blog to the new site.
+* [X] Update link on Archlinux wiki.
 
 Repository:
 
@@ -102,7 +102,7 @@ Script:
 * [ ] Modernize the script.
       * Use `argparse`.
       * Break out nested code blocks into separate functions.
-* [ ] Investigate fonts screenshots that come out weird.
+* [X] Investigate fonts screenshots that come out weird.
       * solar24x32.psfu
       * latarcyrheb-sun32.psfu
       * It's currently not possible to change the GLISH console resolution.  
