@@ -8,37 +8,33 @@ type: docs
 ## Introduction
 
 ArchLinux’s [wiki page on console fonts](https://wiki.archlinux.org/title/Linux_console#Fonts)
-was lacking an organized library of images available for previewing.
-So I made a Python script
+is lacking an organized library of images available for previewing
+and the wiki policy does not allow uploading images.
+So I wrote a Python script
 to produce a PNG image of all fonts contained in `/usr/share/kbd/consolefonts`.
-Then I semi-manually built this site using Ansible and [Docsy](https://www.docsy.dev/).
+Then I wrote an Ansible playbook to generate this site using
+[Docsy](https://www.docsy.dev/).
 
 Here is a tarball of the images&nbsp;:
-[fontspng.tar.gz](//static.alexandre.deverteuil.net/files/consolefonts/fontspng.tar.gz)
-(1&nbsp;359&nbsp;545 bytes).
-It expands to a “fontspng” directory containing the same 205 PNG files as below.
+[screenshots.tar.gz]({{% baseurl %}}files/consolefonts.tar.gz)
+(1.4&nbsp;MB).
+It expands to a “consolefonts” directory containing the same ~210 PNG files as below.
 
 Please send any comments, suggestions or questions to
 [alexandre@deverteuil.net](mailto:alexandre@deverteuil.net).
 
 
-## Readme files from /usr/share/kbd/consolefonts
+## Links
 
-* [README.12x22](//static.alexandre.deverteuil.net/files/consolefonts/README.12x22)
-* [README.Arabic](//static.alexandre.deverteuil.net/files/consolefonts/README.Arabic)
-* [README.Cyrillic](//static.alexandre.deverteuil.net/files/consolefonts/README.Cyrillic)
-* [README.Ethiopic](//static.alexandre.deverteuil.net/files/consolefonts/README.Ethiopic)
-* [README.Greek](//static.alexandre.deverteuil.net/files/consolefonts/README.Greek)
-* [README.Hebrew](//static.alexandre.deverteuil.net/files/consolefonts/README.Hebrew)
-* [README.Lat2-Terminus16](//static.alexandre.deverteuil.net/files/consolefonts/README.Lat2-Terminus16)
-* [README.LatGrkCyr](//static.alexandre.deverteuil.net/files/consolefonts/README.LatGrkCyr)
-* [README.cp1250](//static.alexandre.deverteuil.net/files/consolefonts/README.cp1250)
-* [README.cybercafe](//static.alexandre.deverteuil.net/files/consolefonts/README.cybercafe)
-* [README.drdos](//static.alexandre.deverteuil.net/files/consolefonts/README.drdos)
-* [README.lat0](//static.alexandre.deverteuil.net/files/consolefonts/README.lat0)
-* [README.lat7](//static.alexandre.deverteuil.net/files/consolefonts/README.lat7)
-* [README.lat9](//static.alexandre.deverteuil.net/files/consolefonts/README.lat9)
-* [README.psfu](//static.alexandre.deverteuil.net/files/consolefonts/README.psfu)
+* The code for this site is at [github.com/adeverteuil/linux-console-fonts-screenshots](https://github.com/adeverteuil/linux-console-fonts-screenshots).
+* My personal blog is at [alexandre.deverteuil.net](https://alexandre.deverteuil.net/).
+
+
+## Readme files
+
+For convenience, here are the readme files from `/usr/share/kbd/consolefonts`.
+
+{{< listdir path="files/readme" >}}
 
 
 ## Changelog
@@ -54,6 +50,7 @@ Please send any comments, suggestions or questions to
   Migrate and reformat to a separate site.
   Use [docsy](https://www.docsy.dev/).
   Edit introduction.
+  Update fonts screenshots and README files.
 
 
 ## Copying

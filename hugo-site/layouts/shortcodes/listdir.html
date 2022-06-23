@@ -1,0 +1,10 @@
+{{ $path     := .Get "path" }}
+{{ $filepath := printf "static/%s" $path }}
+{{ $files    := readDir $filepath }}
+{{ if (fileExists $filepath)}}
+<ul>
+    {{- range $files -}}
+		<li><a href="{{ $.Site.BaseURL }}{{ $path }}/{{ .Name }}">{{ .Name }}</a></li>
+	  {{- end -}}
+</ul>
+{{ end }}

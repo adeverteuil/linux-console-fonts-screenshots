@@ -11,6 +11,7 @@
           - libpng  # Provides pnm2png
           - rsync
         state: present
+        update_cache: yes
 
     - name: copy the scripts
       copy:
@@ -30,3 +31,39 @@
       command: /root/gen-fonts-data.py
       args:
         creates: /root/fonts.yaml
+
+    - name: create compressed archive of fonts screenshots
+      archive:
+        path: /root/screenshots
+        dest: /root/screenshots.tar.gz
+
+    - name: download screenshots
+      synchronize:
+        mode: pull
+        recursive: yes
+        delete: yes
+        src: /root/screenshots/
+        dest: ../hugo-site/static/screenshots/
+
+    - name: download screenshots data
+      synchronize:
+        mode: pull
+        src: /root/fonts.yaml
+        dest: ../hugo-site/data/fonts.yaml
+
+    - name: download screenshots.tar.gz
+      synchronize:
+        mode: pull
+        src: /root/screenshots.tar.gz
+        dest: ../hugo-site/static/files/screenshots.tar.gz
+
+    - name: download readme files
+      synchronize:
+        mode: pull
+        src: /usr/share/kbd/consolefonts/
+        dest: ../hugo-site/static/files/readme/
+        recursive: yes
+        delete: yes
+        rsync_opts:
+          - --filter=- partialfonts/
+          - --filter=- *.gz

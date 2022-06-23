@@ -622,14 +622,14 @@
   image: lat2-14.psfu.png
   width: 432
   height: 295
-- name: lat2-sun16.psfu
-  image: lat2-sun16.psfu.png
-  width: 431
-  height: 334
 - name: lat2-16.psfu
   image: lat2-16.psfu.png
   width: 432
   height: 333
+- name: lat2-sun16.psfu
+  image: lat2-sun16.psfu.png
+  width: 431
+  height: 334
 - name: lat2a-16.psfu
   image: lat2a-16.psfu.png
   width: 431

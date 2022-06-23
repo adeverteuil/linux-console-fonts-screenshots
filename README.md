@@ -82,7 +82,10 @@ Do steps 1 to 3 above and use the `dev-server.sh` command to serve the site loca
 Playbook:
 
 * [ ] Update tarball, host it in static.
-* [ ] Download files automatically instead of the commands documented above.
+* [X] Download files automatically instead of the commands documented above.
+* [X] Download/update Readme files automatically.
+      * Would need a data file and a shortcode, just like screenshots.
+      * Alternative: https://discourse.gohugo.io/t/list-files-in-a-directory/21258/3
 
 Site:
 
@@ -91,8 +94,11 @@ Site:
 * [x] Edit GitHub repo URL.
 * [X] Set up Matomo site.
       * [X] Add Matomo code in `head-end.html`.
-* [ ] Edit Introduction with description of my process.
-* [ ] Migrate Readme files from my static site to this site.
+* [X] Edit Introduction with description of my process.
+* [X] Update Link to the Python script.
+* [ ] Customized socials in footer.
+* [ ] Test and update GitHub repo link.
+* [X] Migrate Readme files from my static site to this site.
 * [ ] Add a link back to my blog.
 * [ ] Redirect old URL from my blog to the new site.
 * [ ] Update link on Archlinux wiki.
@@ -108,3 +114,9 @@ Script:
 * [X] Fix error in the script.
 * [ ] Modernize the script.
       * Use `argparse`.
+      * Break out nested code blocks into separate functions.
+* [ ] Investigate fonts screenshots that come out weird.
+      * solar24x32.psfu
+      * latarcyrheb-sun32.psfu
+      * It's currently not possible to change the GLISH console resolution.  
+        https://www.linode.com/community/questions/11069/glish-resolution
