@@ -25,7 +25,7 @@
     - name: generate fonts images
       command: openvt --wait --switch /root/gen-fonts-images.py
       args:
-        creates: /root/screenshots
+        creates: /root/consolefonts-screenshots
 
     - name: generate fonts data
       command: /root/gen-fonts-data.py
@@ -34,15 +34,15 @@
 
     - name: create compressed archive of fonts screenshots
       archive:
-        path: /root/screenshots
-        dest: /root/screenshots.tar.gz
+        path: /root/consolefonts-screenshots
+        dest: /root/consolefonts-screenshots.tar.gz
 
     - name: download screenshots
       synchronize:
         mode: pull
         recursive: yes
         delete: yes
-        src: /root/screenshots/
+        src: /root/consolefonts-screenshots/
         dest: ../hugo-site/static/screenshots/
 
     - name: download screenshots data
@@ -51,11 +51,11 @@
         src: /root/fonts.yaml
         dest: ../hugo-site/data/fonts.yaml
 
-    - name: download screenshots.tar.gz
+    - name: download consolefonts-screenshots.tar.gz
       synchronize:
         mode: pull
-        src: /root/screenshots.tar.gz
-        dest: ../hugo-site/static/files/screenshots.tar.gz
+        src: /root/consolefonts-screenshots.tar.gz
+        dest: ../hugo-site/static/files/consolefonts-screenshots.tar.gz
 
     - name: download readme files
       synchronize:

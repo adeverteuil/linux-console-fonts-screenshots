@@ -39,19 +39,6 @@ https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisite
    ```
 
 
-## Generating/updating the screenshots
-
-1. Go to the project root.
-1. SCP the files.
-   ```
-   rsync --recursive --delete root@your-linode:screenshots hugo-site/static
-   ```
-1. Download the YAML data.
-   ```
-   scp root@your-linode:fonts.yaml hugo-site/data/fonts.yaml
-   ```
-
-
 ## Developing the website (serving locally)
 
 Do steps 1 to 3 above and use the `dev-server.sh` command to serve the site locally.
@@ -81,7 +68,7 @@ Do steps 1 to 3 above and use the `dev-server.sh` command to serve the site loca
 
 Playbook:
 
-* [ ] Update tarball, host it in static.
+* [X] Update tarball, host it in static.
 * [X] Download files automatically instead of the commands documented above.
 * [X] Download/update Readme files automatically.
       * Would need a data file and a shortcode, just like screenshots.
@@ -97,9 +84,9 @@ Site:
 * [X] Edit Introduction with description of my process.
 * [X] Update Link to the Python script.
 * [ ] Customized socials in footer.
-* [ ] Test and update GitHub repo link.
+* [X] Test and update GitHub repo link.
 * [X] Migrate Readme files from my static site to this site.
-* [ ] Add a link back to my blog.
+* [X] Add a link back to my blog.
 * [ ] Redirect old URL from my blog to the new site.
 * [ ] Update link on Archlinux wiki.
 

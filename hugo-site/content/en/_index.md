@@ -16,9 +16,9 @@ Then I wrote an Ansible playbook to generate this site using
 [Docsy](https://www.docsy.dev/).
 
 Here is a tarball of the images&nbsp;:
-[screenshots.tar.gz]({{% baseurl %}}files/consolefonts.tar.gz)
+[consolefonts-screenshots.tar.gz]({{% baseurl %}}files/consolefonts-screenshots.tar.gz)
 (1.4&nbsp;MB).
-It expands to a “consolefonts” directory containing the same ~210 PNG files as below.
+It expands to a “consolefonts-screenshots” directory containing the same ~210 PNG files as below.
 
 Please send any comments, suggestions or questions to
 [alexandre@deverteuil.net](mailto:alexandre@deverteuil.net).
