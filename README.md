@@ -83,7 +83,7 @@ Site:
       * [X] Add Matomo code in `head-end.html`.
 * [X] Edit Introduction with description of my process.
 * [X] Update Link to the Python script.
-* [ ] Customized socials in footer.
+* [X] Customized socials in footer.
 * [X] Test and update GitHub repo link.
 * [X] Migrate Readme files from my static site to this site.
 * [X] Add a link back to my blog.
