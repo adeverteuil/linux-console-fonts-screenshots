@@ -37,6 +37,19 @@ For convenience, here are the readme files from `/usr/share/kbd/consolefonts`.
 {{< listdir path="files/readme" >}}
 
 
+## Issues
+
+The screenshots for [solar24x32.psfu](#solar24x32psfu) and [latarcyrheb-sun32.psfu](#latarcyrheb-sun32psfu)
+overflow the framebuffer resolution.
+The Linode GLISH console only supports a resolution of 1280x768.  
+https://www.linode.com/community/questions/11069/glish-resolution
+
+Some day I might try with a local VM with a higher resolution framebuffer.
+
+The [972.cp (8)](#972cp8) font is buggy.
+The glyphs appear completely blank.
+
+
 ## Changelog
 
 2012-08-05
