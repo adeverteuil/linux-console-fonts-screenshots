@@ -8,7 +8,7 @@ Source code for the site
 
 https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/
 
-* An Archlinux VM
+* An Archlinux VM (only tested on a [Linode](https://linode.com/) VM)
 * Ansible
 * Hugo Extended >=v0.73.0.
 * Go >=v1.12
